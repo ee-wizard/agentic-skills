@@ -1,0 +1,22 @@
+{
+  "name": "ppt-generator",
+  "version": "1.0.0",
+  "description": "PPT Generator Scripts (TypeScript)",
+  "main": "dist/generate.js",
+  "scripts": {
+    "build": "tsc",
+    "generate": "npm run build && node dist/generate.js",
+    "generate:full": "npm run build && node dist/generate_full.js",
+    "generate:grand": "npm run build && node dist/generate_grand.js",
+    "generate:mbe": "npm run build && node dist/generate_mbe.js",
+    "generate:ppt": "npm run build && node dist/generate_ppt.js"
+  },
+  "dependencies": {
+    "pptxgenjs": "^3.12.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0"
+  }
+}

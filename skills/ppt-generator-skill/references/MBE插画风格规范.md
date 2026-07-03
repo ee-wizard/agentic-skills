@@ -191,13 +191,13 @@
 
 ---
 
-## 九、代码实现（python-pptx）
+## 九、代码实现（pptxgenjs - TypeScript）
 
-```python
-# MBE 风格配色
-MBE_COLORS = {
-    'bg': (255, 255, 255),      # 白色背景
-    'border': (0, 0, 0),        # 黑色描边
+```typescript
+// MBE 风格配色
+const MBE = {
+  bg: 'FFFFFF',       // 白色背景
+  border: '000000',   // 黑色描边
     'text': (26, 26, 26),       # 深灰文字
     'yellow': (255, 214, 0),    # 明黄
     'purple': (156, 39, 176),   # 亮紫

@@ -104,17 +104,20 @@ description: Garia AI 图片生成助手。根据用户提供的描述或 images
 
 #### 方式 A：单张生成（快速）
 
-使用 `scripts/generate_garia.py` 直接生成单张图片：
+使用 `scripts/generate_garia.ts` (TypeScript) 直接生成单张图片：
 
 ```bash
-# 激活 Python 环境
+# 安装依赖（首次运行前）
+cd skills/garia-image-skill/scripts
+npm install
+
 # 确保已配置 .env 文件
 
 # 单张生成（交互式输入）
-python .github/skills/garia-image-skill/scripts/generate_garia.py --single
+npx ts-node skills/garia-image-skill/scripts/generate_garia.ts --single
 
 # 指定参数
-python .github/skills/garia-image-skill/scripts/generate_garia.py \
+npx ts-node skills/garia-image-skill/scripts/generate_garia.ts \
   --prompt "一棵高大的古老橡树站在阳光明媚的草地上" \
   --filename "oak-tree.png" \
   --output "./images" \
@@ -125,14 +128,14 @@ python .github/skills/garia-image-skill/scripts/generate_garia.py \
 
 ```bash
 # 使用 images.json 配置批量生成（跳过已有图片）
-python .github/skills/garia-image-skill/scripts/generate_garia.py \
+npx ts-node skills/garia-image-skill/scripts/generate_garia.ts \
   --input "C2-光现象/images.json" \
   --output "C2-光现象/c2-images" \
   --model garia-pro \
   --skip-existing
 
 # 完整参数
-python .github/skills/garia-image-skill/scripts/generate_garia.py \
+npx ts-node skills/garia-image-skill/scripts/generate_garia.ts \
   --input "C2-光现象/images.json" \
   --output "C2-光现象/c2-images" \
   --model garia-pro \
@@ -146,7 +149,7 @@ python .github/skills/garia-image-skill/scripts/generate_garia.py \
 
 ```bash
 # 仅列出需要生成的图片，不实际调用 API
-python .github/skills/garia-image-skill/scripts/generate_garia.py \
+npx ts-node skills/garia-image-skill/scripts/generate_garia.ts \
   --input "C2-光现象/images.json" \
   --dry-run
 ```

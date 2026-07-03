@@ -20,11 +20,11 @@ user-invocable: true
 
 ### Step 2: 加载审稿 SKILL → 撰写初稿
 
-加载 `.github/skills/paper-peer-review-skill/SKILL.md`，**完全遵循其指令**执行审阅分析并撰写中英文双语审稿初稿（包含 Summary、Strengths、Weaknesses & Suggestions、Conclusion 四个部分，先英文后中文）。
+加载 `skills/paper-peer-review-skill/SKILL.md`，**完全遵循其指令**执行审阅分析并撰写中英文双语审稿初稿（包含 Summary、Strengths、Weaknesses & Suggestions、Conclusion 四个部分，先英文后中文）。
 
 ### Step 3: 加载去 AI 化 SKILL → 处理英文
 
-加载 `.github/skills/writing-humanizer/SKILL.md`，**完全遵循其指令**对审稿中的**英文部分**进行去 AI 化处理。注意：
+加载 `skills/writing-humanizer/SKILL.md`，**完全遵循其指令**对审稿中的**英文部分**进行去 AI 化处理。注意：
 
 - **只对英文部分去 AI 化**，中文部分保持原样
 - 英文输出中**禁止出现中文风格标点符号**（如中文破折号 ——、中文引号「」、全角逗号、全角括号等）
